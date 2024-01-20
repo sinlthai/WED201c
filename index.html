@@ -2,22 +2,24 @@
 <html lang="en">
 
 <head>
+    <!-- 文字エンコーディングとタイトルの設定 -->
     <meta charset="UTF-8">
     <title>My Final Project - Home</title>
+    <!-- スタイルシートのリンク -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Header Section -->
+    <!-- ヘッダーセクション -->
     <header>
+        <!-- タイトルとナビゲーションリンク -->
         <h1>Thai Ba Sinl - CE182093</h1>
-        <!-- Navigation Links -->
         <nav>
-            <a href="index.html">Home</a>
-            <a href="achievements.html">Achievements</a>
-            <a href="food.html">Favorite Foods</a>
-            <a href="http://www.github.com/sinlthai">My Github</a><br>
-
+            <a href="index.html">ホーム</a>
+            <a href="achievements.html">達成</a>
+            <a href="food.html">好きな食べ物</a>
+            <a href="http://www.github.com/sinlthai">私のGithub</a><br>
+            <!-- ソーシャルメディアリンク -->
             <a href="https://www.facebook.com/ThaiBaSinl/">
                 <img src="home-facebook.png" alt="facebook" width="50" height="35">
             </a>
@@ -27,28 +29,30 @@
             <a href="https://www.youtube.com/@thaibasinl339">
                 <img src="home-youtube.png" alt="Youtube" width="50" height="35">
             </a>
-
-
         </nav>
     </header>
 
-    <!-- Main Content Section -->
+    <!-- メインコンテンツセクション -->
     <section id="main-content">
-        <h2>Welcome to My Portfolio</h2>
-        <p>This is the home page of my final project. Feel free to explore!</p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Flag-map_of_Vietnam.png" alt="Main Image"
-            width="300" height="400">
+        <!-- タイトルと説明 -->
+        <h2>私のポートフォリオへようこそ</h2>
+        <p>これは私の最終プロジェクトのホームページです。自由に探索してください！</p>
+        <!-- 画像とマウスオーバーイベント -->
+        <img id="hoveredImage" src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Flag-map_of_Vietnam.png"
+            alt="メイン画像" width="300" height="400" onmouseover="upDate(this)" onmouseout="undo()">
     </section>
 
-    <!-- Footer Section -->
+    <!-- フッターセクション -->
     <footer>
-        <!-- Footer Image -->
+        <!-- フッター画像とソーシャルメディアリンク -->
         <img src="https://i.pinimg.com/originals/46/94/05/46940542c7a5b9eb16ee4c5456911a92.jpg" width="30" height="30"
-            alt="Web Design Logo">
-        <!-- Footer Text and Link -->
-        <p>This page is created by Shinjuuichi.</p>
-        <p>If you want to contact me, visit <a href="https://www.facebook.com/ThaiBaSinl">my Facebook</a>.</p>
+            alt="Web Design Logo" onmouseover="upDate(this)" onmouseout="undo()">
+        <!-- フッターテキストとリンク -->
+        <p>このページはShinjuuichiによって作成されました。</p>
+        <p>お問い合わせは、<a href="https://www.facebook.com/ThaiBaSinl">私のFacebook</a>を訪れてください。</p>
     </footer>
+    <!-- JavaScriptファイルのリンク -->
+    <script src="index.js"></script>
 </body>
 
 </html>
