@@ -12,13 +12,14 @@ header {
 /* ナビゲーションのスタイル */
 nav {
   background-color: #2ecc71;
-  display: inline-block; /* 更新: inline-block を使用して nav を表示 */
-  width: 80%; /* 更新: 幅を 80% に設定 */
+  display: flex; /* 更新: flex を使用して水平に配置 */
+  justify-content: space-around; /* 更新: ナビゲーション項目の均等な配置 */
+  align-items: center;
 }
 
 /* ナビゲーション内の画像のスタイル */
 nav img {
-  width: 10%; /* 追加: nav 内の画像の幅を 10% に設定 */
+  width: 30px; /* 更新: ナビゲーション内の画像のサイズを調整 */
 }
 
 /* メインセクションのスタイル */
@@ -31,12 +32,6 @@ main {
 footer {
   background-color: #34495e;
 }
-
-/* li のスタイリングをコメントアウト */
-/* li {
-  display: inline-block;
-  width: 150px;
-} */
 
 /* h1 のスタイル */
 h1 {
@@ -53,10 +48,8 @@ p {
 /* grid クラスのスタイル: 2列のグリッド */
 .grid {
   display: grid;
-  grid-template-columns: 40% 40%;
-  justify-content: space-between;
-  align-items: center;
-  row-gap: 20px;
+  grid-template-columns: repeat(2, 1fr); /* 更新: 2列の等幅グリッド */
+  gap: 20px; /* 更新: グリッド間のスペース */
 }
 
 /* grid クラス内の画像のスタイル: 幅を 100% に設定 */
