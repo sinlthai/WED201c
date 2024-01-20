@@ -1,3 +1,3 @@
-# WEB201cMooc1
+# My WEB201c Project
 
 [This is my project](https://github.com/sinlthai/WEB201cMooc1)
